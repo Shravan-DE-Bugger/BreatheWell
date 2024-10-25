@@ -23,16 +23,22 @@
         }
 
         .back-button {
-            font-size: 24px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 16px;
             color: #4CAF50;
-            font-weight: bold;
             text-decoration: none;
+            font-weight: bold;
             margin-bottom: 20px;
-            display: inline-block;
         }
 
         .back-button:hover {
             color: #45a049;
+        }
+
+        .back-button::before {
+            content: "← ";
+            font-size: 20px;
         }
 
         h1, h2 {
@@ -93,7 +99,7 @@
 <body>
 
     <div class="container">
-        <a href="index.html" class="back-button">←</a>
+        <a href="index.html" class="back-button">Back</a>
         
         <h1>Education</h1>
         <p>Welcome to the Education section of BreatheWell! Here, you can find resources to deepen your knowledge about asthma, respiratory health, and overall wellness. We are committed to empowering you with the right information to make informed decisions for a healthier life.</p>
